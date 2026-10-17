@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pawan | Accountant</title>
+<meta name="description" content="Portfolio of Pawan, an accountant specialising in financial reporting, GST/TDS compliance and reconciliations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef3ef;--sheet:#f9fbf9;--ink:#13243b;--muted:#51627a;--rule:#b9cbc3;--red:#b3261e;--green:#1f6b4f;
+--serif:"IBM Plex Serif",Georgia,serif;--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--paper:#0f1a17;--sheet:#15241f;--ink:#e4efe9;--muted:#9bb0a7;--rule:#2d4a40;--red:#ff8a80;--green:#6fd1a4}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans);font-variant-numeric:tabular-nums}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--rule);z-index:5}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font:600 18px var(--serif)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+/* hero ledger */
+.hero{padding:56px 0 40px}
+h1{font:600 clamp(48px,9vw,96px)/1 var(--serif);margin:0 0 12px;letter-spacing:-.02em}
+.role{font:500 22px var(--serif);color:var(--muted);margin:0 0 32px}
+.ledger{background:var(--sheet);border:1px solid var(--rule);border-left:4px solid var(--red);max-width:640px}
+.ledger table{width:100%;border-collapse:collapse;font-size:15px}
+.ledger th,.ledger td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--rule)}
+.ledger th{font-weight:600;color:var(--muted);font-size:14px}
+.ledger td:nth-child(n+2),.ledger th:nth-child(n+2){text-align:right}
+.ledger tfoot td{font-weight:600;border-bottom:0;border-top:2px solid var(--ink)}
+.dr{color:var(--red)}.cr{color:var(--green)}
+.ledger tbody tr{animation:post .5s both}
+.ledger tbody tr:nth-child(2){animation-delay:.25s}.ledger tbody tr:nth-child(3){animation-delay:.5s}.ledger tbody tr:nth-child(4){animation-delay:.75s}
+.ledger tfoot td{animation:post .5s 1s both}
+@keyframes post{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:11px 20px;border:2px solid var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.btn.fill{background:var(--ink);color:var(--paper)}
+/* sections */
+section{padding:48px 0;border-top:1px solid var(--rule)}
+h2{font:600 30px/1.2 var(--serif);margin:0 0 24px}
+h3{font:600 20px/1.3 var(--serif);margin:0}
+.lead{max-width:68ch;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 40px}
+.grid div{padding:14px 0;border-bottom:1px solid var(--rule)}
+.grid strong{display:block}.grid span{color:var(--muted);font-size:15px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:0 0 32px}
+.job .when{color:var(--muted);font-size:15px}
+.job .where{color:var(--muted);margin:2px 0 12px}
+ul.pts{margin:0;padding-left:20px;max-width:68ch}ul.pts li{margin-bottom:8px}
+.ph{background:color-mix(in srgb,var(--red) 10%,transparent);padding:0 4px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.certs{list-style:none;padding:0;margin:0}.certs li{padding:10px 0;border-bottom:1px solid var(--rule)}
+.contact{font:500 clamp(20px,3.5vw,28px)/1.9 var(--serif)}
+footer{padding:28px 0;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
+@media (max-width:640px){nav ul{gap:14px;font-size:14px}.job{grid-template-columns:1fr}.ledger table{font-size:14px}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap"><b>Pawan</b>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Pawan</h1>
+<p class="role">Accountant. Books that balance, returns filed on time.</p>
+<div class="ledger" role="img" aria-label="Sample ledger showing debits equal credits">
+<table>
+<thead><tr><th>Particulars</th><th>Dr</th><th>Cr</th></tr></thead>
+<tbody>
+<tr><td>Accuracy in reconciliations</td><td class="dr">100%</td><td></td></tr>
+<tr><td>Statutory returns (GST, TDS) filed on time</td><td></td><td class="cr">100%</td></tr>
+<tr><td>Expense processing time saved</td><td></td><td class="cr">15%</td></tr>
+</tbody>
+<tfoot><tr><td>Result</td><td colspan="2">Dr = Cr. Books balanced.</td></tr></tfoot>
+</table></div>
+<div class="cta"><a class="btn fill" href="#contact">Get in touch</a><a class="btn" href="#experience">View experience</a></div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p class="lead">Detail-oriented, analytical accountant with experience in financial reporting, general ledger management, accounts payable and receivable, and tax compliance. I keep financial records accurate, improve accounting processes, and make sure every filing meets regulations. I work in Tally Prime, QuickBooks, MS Excel and SAP ERP.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Core competencies</h2>
+<div class="grid">
+<div><strong>Financial reporting and analysis</strong><span>Balance sheet, profit and loss, monthly closes</span></div>
+<div><strong>General ledger maintenance</strong><span>Journal entries, petty cash, ledgers</span></div>
+<div><strong>Accounts payable and receivable</strong><span>Invoicing, vendor payments, collections</span></div>
+<div><strong>Bank and account reconciliation</strong><span>Discrepancies found and resolved promptly</span></div>
+<div><strong>Taxation and compliance</strong><span>GST, TDS, Income Tax</span></div>
+<div><strong>Payroll processing</strong><span>Monthly salary and deductions</span></div>
+<div><strong>Budgeting and forecasting</strong><span>Planning and variance tracking</span></div>
+<div><strong>Audit support</strong><span>Documentation retrieved and organised</span></div>
+<div><strong>Software</strong><span>Tally Prime, QuickBooks, SAP ERP, Excel (VLOOKUP, Pivot Tables)</span></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<article class="job">
+<div class="when"><span class="ph">[Month, Year]</span> to Present</div>
+<div><h3>Accountant</h3><p class="where"><span class="ph">[Company Name]</span>, <span class="ph">[City, State]</span></p>
+<ul class="pts">
+<li>Managed end-to-end accounting operations: general ledger entries, AP/AR processing and monthly financial closes.</li>
+<li>Reconciled <span class="ph">[X]</span> bank accounts every month and resolved discrepancies promptly to keep data 100% accurate.</li>
+<li>Prepared and processed invoices, expense reports and payments for vendors and clients.</li>
+<li>Helped prepare monthly, quarterly and annual financial statements (Balance Sheet, Profit and Loss).</li>
+<li>Calculated and filed statutory returns (GST, TDS and others) on time.</li>
+<li>Streamlined expense tracking, cutting monthly processing time by 15%.</li>
+</ul></div>
+</article>
+<article class="job">
+<div class="when"><span class="ph">[Month, Year]</span> to <span class="ph">[Month, Year]</span></div>
+<div><h3>Junior Accountant / Accounting Assistant</h3><p class="where"><span class="ph">[Previous Company Name]</span>, <span class="ph">[City, State]</span></p>
+<ul class="pts">
+<li>Recorded daily transactions, journal entries and petty cash in <span class="ph">[Tally / QuickBooks / ERP]</span>.</li>
+<li>Maintained client and vendor ledgers and followed up on overdue receivables to improve cash flow.</li>
+<li>Supported senior accountants in internal and external audits by retrieving and organising financial documents.</li>
+<li>Counted inventory monthly and reconciled physical stock with ledger records.</li>
+</ul></div>
+</article>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="edu">
+<div><h2>Education</h2><h3>Bachelor of Commerce (B.Com), Accounting and Finance</h3>
+<p><span class="ph">[University / College Name]</span>, <span class="ph">[Graduation Year]</span></p></div>
+<div><h2>Certifications</h2>
+<ul class="certs"><li>Tally Prime / Advanced Excel for Finance</li><li>GST and Direct Taxation</li><li>CPA / CA Inter <span class="ph">[optional]</span></li></ul></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<div class="contact">
+<div><span class="ph">[Email Address]</span></div>
+<div><span class="ph">[Phone Number]</span></div>
+<div><span class="ph">[LinkedIn Profile URL]</span></div>
+<div><span class="ph">[City, State, Zip Code]</span></div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="y">2026</span> Pawan. Replace the highlighted [bracketed] text with your details.</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
